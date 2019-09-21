@@ -5,7 +5,6 @@ import Player from "../../models/Player"
 import PlayStore from "../../stores/PlayStore";
 import PlayerContainer from "../Player/Player";
 import { useTranslation } from "react-i18next";
-//import { GameStatus } from "../../models/GameStatus";
 import { GameResult } from "../../models/GameResult";
 import { MatchStatus } from "../../models/MatchStatus";
 import { MatchResult } from "../../models/MatchResult";
@@ -37,10 +36,14 @@ function Arena() {
             { playStore.matchStatus === MatchStatus.FINISHED &&
                 (
                     <div className="match-result">
-                        <p className="result-text">
+                        <p className="match-result-text">
                             { playStore.matchResult == MatchResult.HUMAN_WON && t("matchResult.HUMAN_WON") }
                             { playStore.matchResult == MatchResult.COMPUTER_WON && t("matchResult.COMPUTER_WON") }
                         </p>
+                        <p>{t("youPlayed")} { playStore.currentRound } {t("rounds")}</p>
+                        <p>{t("youScored")} { playStore.humanPlayerWins } </p>
+                        <p>{t("yourOpponentScored")} { playStore.computerPlayerWins }</p>
+                        <p>{t("toWin")} { playStore.computerPlayerWins }</p>
                         <button
                             className="play-again"
                             onClick={() => { playStore.resetValues(); }}>
