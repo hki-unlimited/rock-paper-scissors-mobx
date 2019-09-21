@@ -1,0 +1,17 @@
+.arena-container {
+    width: 100%;
+}
+
+.arena-players {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.round-title, .game-result {
+    text-align: center;
+}

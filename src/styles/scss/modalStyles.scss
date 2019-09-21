@@ -1,0 +1,20 @@
+.dbs-modal-buttons-container {
+    display: flex;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dbs-modal-left-button {
+    margin: 5px;
+    float: left;
+    width: 49%;
+}
+
+.dbs-modal-right-button {
+    margin: 5px;
+    float: right;
+    width: 49%;
+}

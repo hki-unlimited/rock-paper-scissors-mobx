@@ -1,0 +1,35 @@
+$schenker-blue: #375fc3;
+$schenker-dark-blue: #0a1e6e;
+$data-table-table-header-color: rgba(145, 145, 145, 1);
+$schenker-white-grey: #e1e6eb;
+$schenker-slightly-whiter-grey: #eaeef1;
+$schenker-dark-grey: #646973;
+$schenker-very-dark-grey: #3c414b;
+$schenker-grey: rgba(145, 145, 145, 1);
+$schenker-light-grey: #c8cdd2;
+$schenker-light-red: #f7e5e5;
+$schenker-dark-red: #b20000;
+$ok-color: #006b00;
+$not-ok-color: #bb0000;
+
+.dbs-button-dark {
+    background-color: $schenker-dark-blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1px;
+    box-shadow: 1px 1px $schenker-grey;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dbs-button-light {
+    background-color: $schenker-blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1px;
+    box-shadow: 1px 1px $schenker-grey;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

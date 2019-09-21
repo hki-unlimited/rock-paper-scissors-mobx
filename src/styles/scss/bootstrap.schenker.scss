@@ -1,0 +1,40 @@
+/* Bootstrap overrides */
+html body {
+    font-family: 'db_sans';
+}
+
+@font-face {
+    font-family: 'db_sans';
+    src: url(https://merlinchat-schenker.merlinsystems.fi/MICC/Styles/dbsan03-web.woff) format('woff');
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-view {
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.main-view.main-view-search {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.main-view.main-view-customer {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+/*
+@media all and (max-width: 919px) {
+  .main-container {
+    display: none;
+  }
+  .dbs-tabbed-navigation {
+    display: none;
+  }
+}*/

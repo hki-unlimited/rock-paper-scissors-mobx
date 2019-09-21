@@ -1,0 +1,19 @@
+.dbs-locale-changer {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1.5rem;
+    margin-left: auto;
+}
+
+.dbs-locale-changer-locale {
+    cursor: pointer;
+    cursor: hand;
+    color: #999;
+    padding: 0rem 0.5rem 0rem 1rem;
+}
+
+.dbs-locale-changer-locale-active {
+    color: #555;
+    padding: 0rem 0.5rem 0rem 1rem;
+}

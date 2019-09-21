@@ -1,0 +1,29 @@
+{
+  "fi": {
+    "translation": {
+      "gameTitle": "Kivi, paperi, sakset",
+      "play": "Pelaa",
+      "history": "Historia",
+      "round": "Erä",
+      "you": "Sinä",
+      "computer": "Tietokone",
+      "rock": "Kivi",
+      "paper": "Paperi",
+      "scissors": "Sakset",
+      "takeYourPick": "Tee valintasi",
+      "yourOpponentIsReady": "Vastustajasi on valmiina",
+      "youPicked": "Sinä valitsit: ",
+      "yourOpponentPicked": "Vastustajasi valitsi: ",
+      "playAgain": "Pelaa uudestaan",
+      "gameResult": {
+        "HUMAN_WON": "Sinä voitit!",
+        "COMPUTER_WON": "Sinä hävisit!",
+        "DRAW": "Tasapeli!"
+      },
+      "matchResult": {
+        "HUMAN_WON": "Olet voittanut turnauksen!",
+        "COMPUTER_WON": "Olet hävinnyt turnauksen!"
+      }
+    }
+  }
+}

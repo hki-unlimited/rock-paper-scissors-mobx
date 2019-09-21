@@ -1,0 +1,29 @@
+{
+  "en": {
+    "translation": {
+      "gameTitle": "Rock, paper, scissors",
+      "play": "Play",
+      "history": "History",
+      "round": "Round",
+      "you": "You",
+      "computer": "Computer",
+      "rock": "Rock",
+      "paper": "Paper",
+      "scissors": "Scissors",
+      "takeYourPick": "Take your pick",
+      "yourOpponentIsReady": "Your opponent is ready",
+      "youPicked": "You picked: ",
+      "yourOpponentPicked": "Your opponent picked: ",
+      "playAgain": "Play again",
+      "gameResult": {
+        "HUMAN_WON": "You won!",
+        "COMPUTER_WON": "You lost!",
+        "DRAW": "Draw!"
+      },
+      "matchResult": {
+        "HUMAN_WON": "You have won the match!",
+        "COMPUTER_WON": "You have lost the match!"
+      }
+    }
+  }
+}

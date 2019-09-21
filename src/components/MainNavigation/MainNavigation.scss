@@ -1,0 +1,24 @@
+$nav-link-color: #333;
+$nav-bg-color: #eaeef1;
+$nav-active-link-color: #fff;
+$nav-active-bg-color: #0a1e6e;
+
+.dbs-tabbed-navigation.nav {
+  margin-left: 1.87rem;
+  a.nav-link {
+    height: 2em;
+    padding: 0;
+    margin-right: 1em;
+    line-height: 1.95rem;
+    min-width: 10em;
+    color: $nav-link-color;
+    background-color: $nav-bg-color;
+    span {
+      margin-left: 0.68rem;
+    }
+  }
+  a.nav-link.active {
+    color: $nav-active-link-color;
+    background-color: $nav-active-bg-color;
+  }
+}
