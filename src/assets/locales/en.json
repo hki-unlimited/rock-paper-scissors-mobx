@@ -15,6 +15,7 @@
       "youPicked": "You picked: ",
       "yourOpponentPicked": "Your opponent picked: ",
       "playAgain": "Play again",
+      "historySample": "Like kanji, fireworks, and General Tsao's chicken, rock, paper, scissors was actually created in China. It wasn't until the 1700s that it made its way over to Japan. The rest, as they say, is history.",
       "gameResult": {
         "HUMAN_WON": "You won!",
         "COMPUTER_WON": "You lost!",

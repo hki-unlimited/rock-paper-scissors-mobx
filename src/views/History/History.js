@@ -5,7 +5,7 @@ function HistoryView() {
   const { t } = useTranslation();
   return (
     <div className="main-view main-view-history">
-        <p>Testing, history view</p>
+        <p>{t("historySample")}</p>
     </div>
   );
 }
