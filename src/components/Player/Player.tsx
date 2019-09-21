@@ -34,10 +34,10 @@ function Player(props: IPlayerProps) {
                 ) :
                 ("???")
             }
-            { (player.isHuman && playStore.gameStatus == GameStatus.INITIAL) && <p>{ t("takeYourPick") }</p> }
-            { (player.isHuman && playStore.gameStatus == GameStatus.FINISHED) && <p>{ t("youPicked") + t(RockPaperScissors[playStore.currentHumanPlayerSelectedSign as any].toLowerCase()) }</p> }
-            { (!player.isHuman && playStore.gameStatus == GameStatus.INITIAL) && <p>{ t("yourOpponentIsReady") }</p> }
-            { (!player.isHuman && playStore.gameStatus == GameStatus.FINISHED) && <p>{ t("yourOpponentPicked") + t(RockPaperScissors[playStore.currentComputerSelectedSign as any].toLowerCase()) }</p> }
+            { (player.isHuman && playStore.gameStatus === GameStatus.INITIAL) && <p>{ t("takeYourPick") }</p> }
+            { (player.isHuman && playStore.gameStatus === GameStatus.FINISHED) && <p>{ t("youPicked") + t(RockPaperScissors[playStore.currentHumanPlayerSelectedSign as any].toLowerCase()) }</p> }
+            { (!player.isHuman && playStore.gameStatus === GameStatus.INITIAL) && <p>{ t("yourOpponentIsReady") }</p> }
+            { (!player.isHuman && playStore.gameStatus === GameStatus.FINISHED) && <p>{ t("yourOpponentPicked") + t(RockPaperScissors[playStore.currentComputerSelectedSign as any].toLowerCase()) }</p> }
 
             
         </div>

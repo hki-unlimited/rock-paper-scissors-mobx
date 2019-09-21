@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
-import { useTranslation } from "react-i18next";
 import PlayView from "../src/views/Play/Play";
 import HistoryView from "../src/views/History/History"
 import Header from './components/Header/Header';
@@ -10,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 
 function App() {
-  const { t } = useTranslation();
   return (
     <div className="App">
       <Router>

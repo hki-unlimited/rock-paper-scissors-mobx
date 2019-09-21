@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { GameResult } from "../../models/GameResult";
 import { MatchStatus } from "../../models/MatchStatus";
 import { MatchResult } from "../../models/MatchResult";
+import { gameWinsToWinMatch } from "../../assets/constants/gameWinsToWinMatch";
 
 function Arena() {
     const { t } = useTranslation();
@@ -24,6 +25,7 @@ function Arena() {
                             <PlayerContainer player={human}/>
                             <PlayerContainer player={computer}/>
                         </div>
+                        { playStore.currentRound === 1 && <h2 className="first-round-placeholder">{t("toWin")} { gameWinsToWinMatch }</h2> } 
                         <h2 className="game-result">
                             { playStore.gameResult === GameResult.HUMAN_WON && t("gameResult.HUMAN_WON") }
                             { playStore.gameResult === GameResult.COMPUTER_WON && t("gameResult.COMPUTER_WON") }
@@ -37,13 +39,13 @@ function Arena() {
                 (
                     <div className="match-result">
                         <p className="match-result-text">
-                            { playStore.matchResult == MatchResult.HUMAN_WON && t("matchResult.HUMAN_WON") }
-                            { playStore.matchResult == MatchResult.COMPUTER_WON && t("matchResult.COMPUTER_WON") }
+                            { playStore.matchResult === MatchResult.HUMAN_WON && t("matchResult.HUMAN_WON") }
+                            { playStore.matchResult === MatchResult.COMPUTER_WON && t("matchResult.COMPUTER_WON") }
                         </p>
                         <p>{t("youPlayed")} { playStore.currentRound } {t("rounds")}</p>
                         <p>{t("youScored")} { playStore.humanPlayerWins } </p>
                         <p>{t("yourOpponentScored")} { playStore.computerPlayerWins }</p>
-                        <p>{t("toWin")} { playStore.computerPlayerWins }</p>
+                        <p>{t("toWin")} { gameWinsToWinMatch }</p>
                         <button
                             className="play-again"
                             onClick={() => { playStore.resetValues(); }}>
