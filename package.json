@@ -32,7 +32,7 @@
     "typescript": "^3.5.1"
   },
   "scripts": {
-    "start": "react-scripts start && npm run mockserver",
+    "start": "react-scripts start",
     "build": "tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
