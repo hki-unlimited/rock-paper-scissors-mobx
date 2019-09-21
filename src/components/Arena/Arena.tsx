@@ -42,7 +42,7 @@ function Arena() {
                             { playStore.matchResult === MatchResult.HUMAN_WON && t("matchResult.HUMAN_WON") }
                             { playStore.matchResult === MatchResult.COMPUTER_WON && t("matchResult.COMPUTER_WON") }
                         </p>
-                        <p>{t("youPlayed")} { playStore.currentRound } {t("rounds")}</p>
+                        <p>{t("youPlayed")} { playStore.currentRound - 1 } {t("rounds")}</p>
                         <p>{t("youScored")} { playStore.humanPlayerWins } </p>
                         <p>{t("yourOpponentScored")} { playStore.computerPlayerWins }</p>
                         <p>{t("toWin")} { gameWinsToWinMatch }</p>
