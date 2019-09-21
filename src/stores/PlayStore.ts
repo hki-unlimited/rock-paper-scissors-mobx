@@ -37,7 +37,7 @@ class PlayStore {
     this.gameStatus = GameStatus.FINISHED;
     this.currentRound++;
   }
-  runMatch = (humanPlayerSelectedSign: RockPaperScissors) => {
+  runGame = (humanPlayerSelectedSign: RockPaperScissors) => {
     this.currentHumanPlayerSelectedSign = humanPlayerSelectedSign;
     this.currentComputerSelectedSign = generateComputerPlayerSelectedSign();
     switch (this.currentHumanPlayerSelectedSign) {
@@ -93,7 +93,7 @@ decorate(PlayStore, {
   gameResult: observable,
   matchStatus: observable,
   matchResult: observable,
-  runMatch: action
+  runGame: action
 });
 
 export default createContext(new PlayStore());

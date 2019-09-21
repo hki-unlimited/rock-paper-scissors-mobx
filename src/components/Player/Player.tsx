@@ -18,7 +18,7 @@ function Player(props: IPlayerProps) {
     const { player } = props;
     const toWin = gameWinsToWinMatch;
     function onSelectSignClick(humanPlayerSelectedSign: RockPaperScissors) {
-      playStore.runMatch(humanPlayerSelectedSign)
+      playStore.runGame(humanPlayerSelectedSign)
     }
     return(
         <div className="player-container">
