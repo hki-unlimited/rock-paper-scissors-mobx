@@ -34,7 +34,6 @@ function Arena() {
                     </React.Fragment>
                 )
             }
-
             { playStore.matchStatus === MatchStatus.FINISHED &&
                 (
                     <div className="match-result">
@@ -53,8 +52,7 @@ function Arena() {
                         </button>
                     </div>
                 )
-            }            
-            
+            }
         </div>
     );
 }
